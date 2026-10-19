@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: opengym
+    env: docker
+    dockerfilePath: ./web/Dockerfile
+    envVars:
+      - key: RP_ID
+        value: opengym-mc3j.onrender.com
+      - key: ORIGIN
+        value: https://opengym-mc3j.onrender.com
